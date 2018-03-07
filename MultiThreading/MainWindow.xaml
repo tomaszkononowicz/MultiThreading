@@ -1,0 +1,34 @@
+﻿<Window x:Class="MultiThreading.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiThreading"
+        mc:Ignorable="d"
+        Title="MultiThreading" Height="350" Width="419">
+    <Grid>
+        <Label x:Name="labelN" Content="N" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNValue" HorizontalAlignment="Left" Height="20" Margin="56,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelK" Content="K" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxKValue" HorizontalAlignment="Left" Height="20" Margin="56,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonTasks" Content="Tasks" HorizontalAlignment="Left" Margin="215,9,0,0" VerticalAlignment="Top" Width="75" Click="buttonTasks_Click"/>
+        <Label x:Name="labelTasksResult" Content="" HorizontalAlignment="Left" Margin="308,7,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonDelegates" Content="Delegates" HorizontalAlignment="Left" Margin="215,34,0,0" VerticalAlignment="Top" Width="75" Click="buttonDelegates_Click"/>
+        <Label x:Name="labelDelegatesResult" Content="" HorizontalAlignment="Left" Margin="308,31,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonAsyncAwait" Content="Async/Await" HorizontalAlignment="Left" Margin="215,59,0,0" VerticalAlignment="Top" Width="75" Click="buttonAsyncAwait_Click"/>
+        <Label x:Name="labelAsuncAwaitResult" Content="" HorizontalAlignment="Left" Margin="308,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labeli" Content="i" HorizontalAlignment="Left" Margin="13,128,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxiValue" HorizontalAlignment="Left" Height="20" Margin="56,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonFibonacciGet" Content="GET" HorizontalAlignment="Left" Margin="13,159,0,0" VerticalAlignment="Top" Width="75" Click="buttonFibonacciGet_Click"/>
+        <Label x:Name="labelFibonacciResult" Content="" HorizontalAlignment="Left" Margin="93,156,0,0" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progressBarFibonacci"  HorizontalAlignment="Left" Height="10" Margin="13,187,0,0" VerticalAlignment="Top" Width="163"/>
+        <Label x:Name="labelFibonacci" Content="Fibonacci" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelKompresja" Content="Kompresja" HorizontalAlignment="Left" Margin="14,226,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonCompress" Content="Compress" HorizontalAlignment="Left" Margin="14,260,0,0" VerticalAlignment="Top" Width="75" Click="buttonCompress_Click"/>
+        <Button x:Name="buttonDecompress" Content="Decompress" HorizontalAlignment="Left" Margin="107,260,0,0" VerticalAlignment="Top" Width="75" Click="buttonDecompress_Click"/>
+        <Label x:Name="labelDNS" Content="DNS" HorizontalAlignment="Left" Margin="252,110,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonDNSResolve" Content="Resolve" HorizontalAlignment="Left" Margin="308,113,0,0" VerticalAlignment="Top" Width="75" Click="buttonDNSResolve_Click"/>
+        <TextBox x:Name="textBoxDNSResult" HorizontalAlignment="Left" Margin="252,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="168" Width="149" IsReadOnly="True" IsReadOnlyCaretVisible="True"/>
+
+    </Grid>
+</Window>
